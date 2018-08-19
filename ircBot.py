@@ -11,8 +11,8 @@ def internet_on():
     except urllib2.URLError as err: pass
     return False
 
-server = "irc.server.com"
-channel = "#channel"
+server = "irc.dal.net"
+channel = "#go"
 botnick = "" # If you want a custom nick, comment out the next two lines and put your nick here. To use a random nickname, keep this empty.
 
 for i in range(12):

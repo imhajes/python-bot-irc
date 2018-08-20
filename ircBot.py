@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Import some necessary libraries.
-import socket, re, subprocess, os, time, threading, sys, random
+import socket, re, subprocess, os, time, threading, sys, random, urllib2
 
 
 def internet_on():

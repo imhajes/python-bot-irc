@@ -3,21 +3,16 @@ import os
 import random
 import urllib2
 import time
-import requests
-import datetime
-import sys
-from os import environ
-
 
 def internet_on():
     try:
-        response=urllib2.urlopen('https://google.com',timeout=2)
+        response=urllib2.urlopen('http://google.com',timeout=2)
         return True
     except urllib2.URLError as err: pass
     return False
 
-server = "irc.dal.net"
-channel = "#go"
+server = "irc.server.com"
+channel = "#channel"
 botnick = "" # If you want a custom nick, comment out the next two lines and put your nick here. To use a random nickname, keep this empty.
 
 for i in range(12):

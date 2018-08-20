@@ -23,7 +23,6 @@ ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ircsock.connect((server, 6667)) # Here we connect to the server using the port 6667
 ircsock.send("USER "+ botnick +" "+ botnick +" "+ botnick + " " + botnick + "\n") # user authentication
 ircsock.send("NICK "+ botnick +"\n") # assign the nick to the bot
-ircsock.send("nickserv identify " + password + "\r\n")
 def ping(): # respond to server Pings.
   ircsock.send("PONG :pingis\n")  
 

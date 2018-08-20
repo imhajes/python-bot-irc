@@ -1,14 +1,14 @@
 #!/usr/bin/python
 
 # Import some necessary libraries.
-import socket, re, subprocess, os, time, threading, sys, random, urllib2
+import socket, re, subprocess, os, time, threading, sys, random, urllib3
 
 
 def internet_on():
     try:
-        response=urllib2.urlopen('http://google.com',timeout=2)
+        response=urllib3.urlopen('http://google.com',timeout=2)
         return True
-    except urllib2.URLError as err: pass
+    except urllib3.URLError as err: pass
     return False
 
 # Some basic variables used to configure the bot        

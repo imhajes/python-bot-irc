@@ -12,8 +12,8 @@ def internet_on():
     return False
 
 # Some basic variables used to configure the bot        
-server = "" # Server
-channel = "" # Channel
+server = "irc.dal.net" # Server
+channel = "#go" # Channel
 botnick = "" # If you want a custom nick, comment out the next two lines and put your nick here. To use a random nickname, keep this empty.
 
 for i in range(12):

@@ -237,3 +237,6 @@ def main():
 
 #start main functioin
 main()
+
+else:
+		time.sleep(5)
